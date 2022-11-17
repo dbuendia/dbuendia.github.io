@@ -1,8 +1,17 @@
 /*========================================================================*/
 
+:root {
+	--violet: #9F9FBD;
+	--green: #9FBDAE;
+	--soft: #BD9FAE;
+	--dark-grey: #353535;
+  }
 
+.margin-bottom {
+	margin-bottom: 75px;
+}
 
-/* ///////////////////////////////////////////////////////////////////// 
+/* /////////////////////////////////////////////////////////////////////
 // 03 - Preloader
 /////////////////////////////////////////////////////////////////////*/
 
@@ -17,15 +26,11 @@
     background: #fff url('../img/preloader.gif') no-repeat center center;
 }
 
-
-
-
-
 /* ==========================================================================
 	Global Styles
 ========================================================================== */
 a {
-	color: #E04343;
+	color: var(--green);
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
@@ -79,7 +84,7 @@ audio,canvas,video {
 	*display:inline;
 	*zoom: 1;
 }
-* Remove excess height in iOS 5 devices. */
+/* Remove excess height in iOS 5 devices. */
 audio:not([controls]) {
 	display:none;
 	height:0;
@@ -103,6 +108,7 @@ html,button,input,select,textarea {
 body {
 	margin:0;
 	font-family: 'Open Sans',sans-serif;
+	width: 100%;
 }
 /* ==========================================================================Links========================================================================== */
 a:focus {
@@ -116,7 +122,7 @@ a:active,a:hover {
 h1 {
 	font-size:2em;
 	margin:0.67em 0;
-	color:#353535;
+	color:rgba(53, 53, 53, 0.7);
 }
 h2 {
 	font-size:1.5em;
@@ -238,9 +244,9 @@ legend {
 }
 button,input,select,textarea {
 	font-size:100%;
-	/margin:0;
+	margin:0;
 	vertical-align:baseline;
-	*vertical-align:middle;
+	vertical-align:middle;
 }
 button,input {
 	line-height:normal;
@@ -283,7 +289,7 @@ table {
 }
 /* ==========================================================================Section Styles========================================================================== */
 .section-padding {
-	padding:90px 0 100px
+	padding: 50px;
 }
 .dark-bg {
 	background:#f3f5f8;
@@ -293,9 +299,9 @@ table {
 }
 .dark-box {
 	background: #F3F5F8;
-	-webkit-box-shadow: 0px 3px 0px 0px #E04343;
-	-moz-box-shadow: 0px 3px 0px 0px #E04343;
-	box-shadow: 0px 3px 0px 0px #E04343;
+	-webkit-box-shadow: 0px 3px 0px 0px var(--green);
+	-moz-box-shadow: 0px 3px 0px 0px var(--green);
+	box-shadow: 0px 3px 0px 0px var(--green);
 	padding:20px 0;
 }
 .dark-box:hover,.dark-box:focus {
@@ -321,7 +327,7 @@ table {
 	padding:0;
 }
 .inner {
-	padding-top: 138px;
+	padding-top: 90px;
 }
 /* ==========================================================================Navigation========================================================================== */
 .menu-wrap a {
@@ -329,7 +335,7 @@ table {
 	outline:none!important;
 }
 .menu-wrap a:hover,.menu-wrap a:focus {
-	color: #E04343;
+	color: #BD9FAE;
 }
 .content-wrap {
 	overflow-y:scroll;
@@ -369,7 +375,7 @@ table {
 	right:0.5em;
 	bottom:0.5em;
 	left:0.5em;
-	background: linear-gradient(#E04343 20%,rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0) 40%,#E04343 40%,#E04343 60%,rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0) 80%,#E04343 80%);
+	background: linear-gradient(var(--green) 20%,rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0) 40%,var(--green) 40%,var(--green) 60%,rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0) 80%,var(--green) 80%);
 	content:'';
 }
 .menu-button:hover {
@@ -424,7 +430,7 @@ table {
 	transform:translate3d(0,0,0);
 	-webkit-transition-delay:0s;
 	transition-delay:0s;
-	border-bottom: 1px solid #E04343;
+	border-bottom: 1px solid var(--green);
 }
 .show-menu .icon-list a {
 	opacity:1;
@@ -453,11 +459,12 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	background: url('../img/header-bg.jpg') right bottom no-repeat;
+	background: url('../img/dani-bayern.png') right bottom no-repeat;
 	background-size: contain;
-	padding:110px 0 100px 0;
-	height:auto;
+	/* padding:110px 0 100px 0; */
+	height: 450px;
 	background-color: #FBFBFB;
+	/* color: #9f9fbd */
 }
 .hero h1 {
 	font-size: 120px;
@@ -468,7 +475,7 @@ table {
 	text-transform: uppercase;
 }
 .hero h1 span {
-	color:#a1a9b0;
+	color: #353535;
 	/* display:inline-block; */
 }
 .hero h3 {
@@ -476,7 +483,7 @@ table {
 	margin:0;
 	padding:0;
 	opacity:0.5;
-	color: #E04343;
+	color: var(--green);
 	letter-spacing: 18px;
 	line-height: 50px;
 	text-transform: uppercase;
@@ -568,7 +575,7 @@ h1.arrow {
 	font-weight: bold;
 }
 h1.arrow span {
-    color: #E04343;
+    color: var(--green);
 }
 /* ==========================================================================About========================================================================== */
 .about-image {
@@ -579,7 +586,7 @@ h1.arrow span {
 	background-size:cover;
 }
 .color-bg {
-	background: #E04343;
+	background: var(--green);
 }
 
 .color-bg a {
@@ -597,7 +604,7 @@ h1.arrow span {
 }
 .color-bg .weight-outline-btn:hover {
   background: #FFF;
-  color: #E04343;
+  color: var(--green);
   border-color: rgba(0, 0, 0, 0);
 }
 .about-text {
@@ -633,12 +640,12 @@ h1.arrow span {
 	margin-bottom:40px;
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
-	border: 1px solid #E04343;
-	color: #E04343;
+	border: 1px solid var(--green);
+	color: var(--green);
 }
 .services .item:hover .icon {
-	background: #E04343;
-	border: 1px solid #E04343;
+	background: var(--green);
+	border: 1px solid var(--green);
 }
 .services .item [class*=fa] {
 	-webkit-transition:all .3s ease-out;
@@ -745,12 +752,12 @@ img.grayscale:hover {
 }
 .effects {
 	padding-left:15px;
+	margin: 15px;
 }
 .effects .img {
-	position:relative;
-	position:relative;
+	/* position:relative; */
 	z-index:1;
-	overflow:hidden;
+	/* overflow:hidden; */
 }
 .effects .img:nth-child(n) {
 	margin-right:5px;
@@ -765,7 +772,7 @@ img.grayscale:hover {
 	display:block;
 	margin:0;
 	padding:0;
-	height:auto;
+	/* height:auto; */
 }
 .overlay {
 	display:block;
@@ -801,20 +808,18 @@ img.grayscale:hover {
 	opacity:1;
 }
 .img img {
+	width: 400px;
+	height: 400px;
+	/* object-fit: cover; */
+	object-fit: fill;
 	width:-webkit-calc(100%+40px) !important;
 	width:calc(100%+40px) !important;
-	-webkit-transition:opacity 0.35s,-webkit-transform 0.35s;
 	transition:opacity 0.35s,transform 0.35s;
-	-moz-transition:opacity 0.35s,-moz-transform 0.35s;
-	-o-transition:opacity 0.35s,-o-transform 0.35s;
-	-webkit-transform:translate3d(-40px,0,0);
-	transform:translate3d(-40px,0,0);
-	-ms-transform:translate3d(-40px,0,0);
 }
 .img:hover img {
-	-webkit-transform:translate3d(0,0,0);
-	transform:translate3d(0,0,0);
-	-ms-transform:translate3d(-40px,0,0);
+	/* -webkit-transform:translate3d(0px,-40px,0); */
+	transform:translate3d(0,-25px,0);
+	/* -ms-transform:translate3d(-40px,0,0); */
 }
 .hype {
 	position:absolute;
@@ -855,7 +860,7 @@ img.grayscale:hover {
 	background: #FFE800;
 	border: solid 1px #FFE800;
 	padding:20px;
-	color: #E04343;
+	color: var(--green);
 	text-transform:uppercase;
 	letter-spacing:1px;
 	transition:all 0.5s ease;
@@ -866,11 +871,11 @@ img.grayscale:hover {
 .subscribe input[type=submit]:hover {
 	background: rgba(255, 232, 0, 0.9);
 	border: solid 1px #FFE800;
-	color: #E04343;
+	color: var(--green);
 }
 /* ==========================================================================CTA========================================================================== */
 .spacer-cta {
-	background-color: #E04343;
+	background-color: var(--green);
 	padding:70px 0;
 }
 .outline-btn {
@@ -883,8 +888,8 @@ img.grayscale:hover {
 	letter-spacing:1px;
 }
 .outline-btn:hover,.outline-btn:focus {
-	color: #E04343;
-	border: solid 1px #E04343;
+	color: var(--green);
+	border: solid 1px var(--green);
 	background: #FFE801;
 }
 .weight-outline-btn {
@@ -919,7 +924,7 @@ ul.social-buttons li:last-child {
 .social-btn {
 	width:40px;
 	height:40px;
-	background: #E04343;
+	background: var(--green);
 	display:inline-block;
 	color:#fff;
 	font-size:17px;
@@ -928,24 +933,25 @@ ul.social-buttons li:last-child {
 }
 .social-btn:hover,.social-btn:focus {
 	background: rgba(255, 232, 0, 1);
-	color: #E04343;
+	color: var(--green);
 }
 .social {
 	margin-top: 25px
 }
 /* ==========================================================================Contact========================================================================== */
 .up-btn {
+	border: none;
 	width:55px;
 	height:55px;
-	background: rgba(255, 232, 1, 0.9);
+	background: rgba(255, 232, 1, 0.3);
 	display:block;
 	margin:0 auto;
-	color: #E04343;
+	color: var(--green);
 	font-size:18px;
 	line-height:52px;
 	text-align:center;
-	position:absolute;
-	top:-26px;
+	/* position:absolute; */
+	/* top:16px; */
 	left:0;
 	right:0;
 	margin-left:auto;
@@ -1007,7 +1013,7 @@ ul.social-buttons li:last-child {
 }
 
 .btn-send{
-	background:#E04343;
+	background:var(--green);
 	color: white;
 	transition: all 0.4s;
 	border-radius: 0;
@@ -1016,7 +1022,7 @@ ul.social-buttons li:last-child {
 
 .btn-send:hover{
 	background: #FFE800;
-	color: #E04343
+	color: var(--green)
 }
 
 button,button:focus,button:hover,button:active {
@@ -1075,8 +1081,8 @@ ul.slides li {
 	font-weight: bold;
 }
 .flex-control-paging li a.flex-active {
-    background: #E04343;
-    border-color: #E04343;
+    background: var(--green);
+    border-color: var(--green);
 }
 
 .color-bg .flex-control-paging li a{
@@ -1208,7 +1214,7 @@ ul.slides li {
 
 	.btn-send {
 	    float: none;
-	
+
 	    margin-bottom: 80px;
 	}
 	.effects .img {
@@ -1236,3 +1242,105 @@ ul.slides li {
 	    padding-bottom: 40px;
 	}
 }
+
+.portfolio-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.portfolio-container > *{
+	flex-basis: 33.333333%;
+	text-align: center;
+	padding: 20px;
+}
+
+@media (max-width: 768px) {
+	body {
+		width: 100vh;
+	}
+}
+@media (max-width: 428px) {
+
+	body {
+		width: inherit;
+	}
+
+	iframe {
+		width: 100% !important;
+	}
+
+	.hero h1 {
+		font-size: 50px;
+		letter-spacing: -5px;
+		line-height: 40px;
+		margin-top: -170px;
+	}
+
+	.hero h3 {
+		color: var(--soft);
+	}
+
+	.hero {
+		background: url('../img/dani-bayern.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-top: 200px;
+	}
+
+	.menu-button,.menu-wrap {
+		/* font-size: inherit; */
+		display: none;
+	}
+
+	.img img {
+		width: 270px;
+		height: 270px;
+	}
+}
+
+.portfolio-text {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* z-index: 0; */
+  }
+
+  .portfolio-text p {
+	font-size: 50px;
+	color: var(--violet);
+	/* background-color: white; */
+	/* color: var(--green); */
+	padding: 30px;
+	letter-spacing: -4px;
+	margin: 0;
+	font-weight: 400;
+  }
+
+  .portfolio-text p:hover {
+	background-color: transparent;
+	color: white;
+  }
+
+  .portfolio-text span {
+	/* display: none; */
+	margin-top: -10px;
+	color: var(--dark-grey);
+  }
+
+  .wp1 p {
+	font-size: 25px;
+	text-align: justify;
+  }
+
+  html {
+	display: flex;
+	justify-content: center;
+  }
+
+  body {
+	max-width: 90%;
+  }
