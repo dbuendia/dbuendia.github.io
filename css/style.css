@@ -5,6 +5,8 @@
 	--green: #9FBDAE;
 	--soft: #BD9FAE;
 	--dark-grey: #353535;
+	--white-bg: #FBFBFB;
+	--yellow: #FFE801;
   }
 
 .margin-bottom {
@@ -305,9 +307,9 @@ table {
 	padding:20px 0;
 }
 .dark-box:hover,.dark-box:focus {
-	-webkit-box-shadow: 0px 3px 0px 0px #FFE801;
-	-moz-box-shadow: 0px 3px 0px 0px #FFE801;
-	box-shadow: 0px 3px 0px 0px #FFE801;
+	-webkit-box-shadow: 0px 3px 0px 0px var(--yellow);
+	-moz-box-shadow: 0px 3px 0px 0px var(--yellow);
+	box-shadow: 0px 3px 0px 0px var(--yellow);
 }
 .box-hover {
 	transition:all 500ms ease-in-out;
@@ -463,7 +465,7 @@ table {
 	background-size: contain;
 	/* padding:110px 0 100px 0; */
 	height: 450px;
-	background-color: #FBFBFB;
+	background-color: var(--white-bg);
 	/* color: #9f9fbd */
 }
 .hero h1 {
@@ -881,8 +883,8 @@ img.grayscale:hover {
 .outline-btn {
 	display:inline-block;
 	padding:25px 40px;
-	color: #FFE801;
-	border: solid 1px #FFE801;
+	color: var(--yellow);
+	border: solid 1px var(--yellow);
 	text-transform:uppercase;
 	font-weight:bold;
 	letter-spacing:1px;
@@ -890,7 +892,7 @@ img.grayscale:hover {
 .outline-btn:hover,.outline-btn:focus {
 	color: var(--green);
 	border: solid 1px var(--green);
-	background: #FFE801;
+	background: var(--yellow);
 }
 .weight-outline-btn {
 	display:inline-block;
@@ -1311,24 +1313,24 @@ ul.slides li {
 
   .portfolio-text p {
 	font-size: 50px;
-	color: var(--violet);
-	/* background-color: white; */
-	/* color: var(--green); */
+	color: white;
 	padding: 30px;
 	letter-spacing: -4px;
 	margin: 0;
 	font-weight: 400;
+	box-shadow: #0D0D0D;
+	text-shadow: 1px 1px 2px var(--soft);
   }
 
   .portfolio-text p:hover {
 	background-color: transparent;
-	color: white;
+	color: var(--soft);
   }
 
   .portfolio-text span {
-	/* display: none; */
 	margin-top: -10px;
-	color: var(--dark-grey);
+	color: white;
+	font-size: 18px;
   }
 
   .wp1 p {
@@ -1343,4 +1345,10 @@ ul.slides li {
 
   body {
 	max-width: 90%;
+	background-color: var(--white-bg);
+  }
+
+  .email:hover {
+	font-weight: bold;
+	color: var(--green)
   }
