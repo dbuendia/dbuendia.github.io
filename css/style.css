@@ -300,6 +300,7 @@ table {
 	background-color:#fff;
 }
 .dark-box {
+	margin-bottom: 15px;
 	background: #F3F5F8;
 	-webkit-box-shadow: 0px 3px 0px 0px var(--green);
 	-moz-box-shadow: 0px 3px 0px 0px var(--green);
@@ -329,7 +330,7 @@ table {
 	padding:0;
 }
 .inner {
-	padding-top: 90px;
+	padding-top: 150px;
 }
 /* ==========================================================================Navigation========================================================================== */
 .menu-wrap a {
@@ -1252,7 +1253,7 @@ ul.slides li {
 	justify-content: center;
 }
 
-.portfolio-container > *{
+.portfolio-container > * {
 	flex-basis: 33.333333%;
 	text-align: center;
 	padding: 20px;
@@ -1312,10 +1313,12 @@ ul.slides li {
   }
 
   .portfolio-text p {
-	font-size: 50px;
+	font-size: 38px;
 	color: white;
-	padding: 30px;
-	letter-spacing: -4px;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	/* margin-top: 200px; */
+	letter-spacing: -3px;
 	margin: 0;
 	font-weight: 400;
 	box-shadow: #0D0D0D;
@@ -1335,7 +1338,7 @@ ul.slides li {
 
   .wp1 p {
 	font-size: 25px;
-	text-align: justify;
+	/* text-align: justify; */
   }
 
   html {
@@ -1351,4 +1354,12 @@ ul.slides li {
   .email:hover {
 	font-weight: bold;
 	color: var(--green)
+  }
+
+  p {
+	/* text-align: justify; */
+  }
+
+  .container {
+	width: 100%;
   }
