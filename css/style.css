@@ -464,11 +464,10 @@ table {
 .hero {
 	background: url('../img/dani-bayern.png') right bottom no-repeat;
 	background-size: contain;
-	/* padding:110px 0 100px 0; */
 	height: 450px;
 	background-color: var(--white-bg);
-	/* color: #9f9fbd */
 }
+
 .hero h1 {
 	font-size: 120px;
 	letter-spacing: -8px;
@@ -1290,6 +1289,7 @@ ul.slides li {
 		background-size: cover;
 		background-repeat: no-repeat;
 		margin-top: 200px;
+		background-position: bottom;
 	}
 
 	.menu-button,.menu-wrap {
