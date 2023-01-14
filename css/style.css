@@ -41,7 +41,7 @@ a {
 	outline:none!important;
 }
 a:hover,a:focus,a:active {
-	color:#0D0D0D;
+	/* color:#0D0D0D; */
 	text-decoration:none;
 	outline:none!important;
 }
@@ -592,7 +592,7 @@ h1.arrow span {
 }
 
 .color-bg a {
-    color: #FFE800;
+    /* color: #FFE800; */
 }
 .color-bg h6, .color-bg p {
     color: white;
